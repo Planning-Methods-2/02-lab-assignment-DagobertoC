@@ -40,7 +40,7 @@ tail(usa_arrests)
 # We will use the Building Permits data from the city of San Antonio open data portal
 # Source: https://data.sanantonio.gov/dataset/building-permits/resource/c21106f9-3ef5-4f3a-8604-f992b4db7512
 
-building_permits_sa<-read.csv(file = "datasets/accelaissuedpermitsextract.csv",header = T)
+  building_permits_sa<-read.csv(file = "datasets//accelaissuedpermitsextract.csv",header = T)
 
 names(building_permits_sa)
 View(building_permits_sa)
@@ -77,7 +77,7 @@ head(age10)
 
 
 bexar_medincome <- get_acs(geography = "tract", variables = "B19013_001",
-                           state = "TX", county = "Bexar", geometry = TRUE)
+                           state = "TX", county = "Bexar", geometry = FALSE)
 
 
 View(bexar_medincome)
